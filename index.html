@@ -1,0 +1,71 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="odometr.css" />
+        <link rel="stylesheet" href="animate.css" />
+		<script src="js/countUp.js"></script>
+		<script src="js/reconnecting-websocket.min.js"></script>
+		<script src="js/odometr.js"></script>
+        <script src="js/socket.js"></script>
+    </head>
+
+    <body>
+        <div id="bg"></div>
+        <div id="main">
+            
+            <div id="ratioCont">
+                <div id="ratio"></div>%
+            </div>
+
+            <div id="BpmCont">
+                <div id="BPM" class="odometer"></div>bpm
+            </div>
+
+            <div id="ppCont">
+                <div id="pp_text">
+                    <span id="pp" class="odometer"></span>pp / <span id="ppFC" class="odometer"></span>pp
+                </div>
+            </div>
+
+            <div id="ppInGameCont">
+                <div id="ppInGame" class="odometer pp"></div>
+            </div>
+
+            <div id="grade"></div>
+
+            <div id="accInfo">
+                <div id="h100Cont">
+                    <div id="h100" class="odometer"></div>
+                </div>
+                <div id="h50Cont">
+                    <div id="h50" class="odometer"></div>
+                </div>
+                <div id="h0Cont">
+                    <div id="h0" class="odometer"></div>
+                </div>
+                <div id="hSBCont">
+                    <div id="hSB" class="odometer"></div>
+                </div>
+            </div>
+            <div id="mapCont">
+                <div id="titleCont">
+                    <div id="title"></div>
+                </div>
+                
+                <div id="diff"></div>
+                <div id="SR"></div>
+            </div>
+            <div id="statsCont">
+                <div id="AR"></div>
+                <div id="CS"></div>
+                <div id="HP"></div>
+                <div id="OD"></div>
+            </div>
+            <div id="modsUsed"></div>
+
+
+        </div>
+    </body>
+    <script src="js/index.js"></script>
+</html>
