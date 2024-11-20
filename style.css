@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "Poppins-Regular";
-	src: url("./fonts/Poppins-Regular.ttf");
+	src: url("fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
 	font-family: "Poppins-Semibold";
-	src: url("./fonts/Poppins-SemiBold.ttf");
+	src: url("fonts/Poppins-SemiBold.ttf");
 }
 @font-face {
     font-family: "GENSHIN JA-JP";
-    src: url("./fonts/GENSHIN-JA-JP.TTF");
+    src: url("fonts/GENSHIN-JA-JP.TTF");
 }
 
 body,
@@ -51,29 +51,43 @@ html {
     font-size: 30px;
     height: 35px;
 }
-#ppCont {
+#ppInGameCont {
     position: absolute;
     right: 300px;
     top: 254px;
     color: #efa7fc;
     background: radial-gradient(#402349 0%, #5a395f 100%);
-    font-size: 30px;
-    height: 40px;
-    padding: 5px 10px 10px 15px;
+    font-size: 30px; /* Base font size */
+    height: auto;
+    padding: 12px 10px 10px 15px;
     transition: ease-in-out 400ms;
     white-space: nowrap;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
+    align-items: center;
     overflow: hidden;
     z-index: -1;
 }
-#ppInGameCont {
+
+.odometer {
+    font-size: 1em; /* Match base font size */
+    line-height: 1;
+    font-weight: bold;
+}
+
+#pp_text span {
+    font-size: 1em; /* Match the odometer numbers */
+    line-height: 1;
+    font-weight: bold;
+    vertical-align: middle;
+}
+#ppMenuCont {
     position: absolute;
     left: 15px;
     bottom: 176px;
     color: #efa7fc;
     background: radial-gradient(circle, #402349 0%, #5a395f 100%);
-    height: 40px;
+    height: auto;
     padding: 5px 10px 10px 15px;
     transition: ease-in-out 400ms;
     white-space: nowrap;
@@ -167,6 +181,7 @@ html {
     border-radius: 5px;
     position: absolute;
     font-family: "Poppins-Semibold";
+    font-size: 20px;
     color: #efa7fc;
     background: radial-gradient(circle, #402349 0%, #5a395f 100%);
     transition: ease-in-out 500ms;
@@ -243,11 +258,11 @@ html {
     color: #efa7fc;
     background: radial-gradient(circle, #402349 0%, #5a395f 100%);
     font-size: 30px;
-    height: 40px;
-    padding: 5px 10px 10px 15px;
+    height: auto;
+    padding: 10px 10px 10px 15px;
     transition: ease-in-out 400ms;
     white-space: nowrap;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     overflow: hidden;
     z-index: -1;
