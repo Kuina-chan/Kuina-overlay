@@ -1,13 +1,12 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="odometr.css" />
-        <link rel="stylesheet" href="animate.css" />
-		<script src="js/countUp.js"></script>
-		<script src="js/reconnecting-websocket.min.js"></script>
-		<script src="js/odometr.js"></script>
-        <script src="js/socket.js"></script>
+		<link rel="stylesheet" href="styles/animate.css" />
+		<link rel="stylesheet" href="styles/odometr.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href = "style.css"/>
+		<script src="js/odometr.js" type="module"></script>
+		<script src="js/socket.js" type="module"></script>
     </head>
 
     <body>
@@ -15,21 +14,22 @@
         <div id="main">
             
             <div id="ratioCont">
-                <div id="ratio"></div>%
+                <div id="ratio" ></div><span>%</span>
             </div>
 
             <div id="BpmCont">
-                <div id="BPM" class="odometer"></div>bpm
-            </div>
-
-            <div id="ppCont">
-                <div id="pp_text">
-                    <span id="pp" class="odometer"></span>pp / <span id="ppFC" class="odometer"></span>pp
-                </div>
+                <div id="BPM" class="odometer"></div><span>BPM</span>
             </div>
 
             <div id="ppInGameCont">
-                <div id="ppInGame" class="odometer pp"></div>
+                <div id="pp_text">
+                  <span id="currentPP" class="odometer"></span><span>pp / </span>
+                  <span id="simulatedPP" class="odometer"></span><span>pp</span>
+                </div>
+              </div>              
+
+            <div id="ppMenuCont">
+                <div id="SSpp" class="odometer pp"></div>
             </div>
 
             <div id="grade"></div>
@@ -67,5 +67,5 @@
 
         </div>
     </body>
-    <script src="js/index.js"></script>
+    <script src="index.js" type="module"></script>
 </html>
